@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <div class="scrollToTop">
+    <p>Top</p>
+  </div>
+  <nav class="mo_nav">
+    <div class="ad_back">BACK</div>
+    <ul>
+      <li class="add_depth">
+        <a href="#" target="_self">회사소개</a>
+        <ul class="add_depth_area">
+          <li class="ad_tit">회사소개</li>
+          <li><a href="company_info.html">인사말</a></li>
+          <li><a href="history.html">연혁</a></li>
+          <li><a href="way_to_come.html">오시는 길 및 회사전경</a></li>
+        </ul>
+      </li>
+      <li class="add_depth">
+        <a href="#" target="_self">사업분야</a>
+        <ul class="add_depth_area">
+          <li class="ad_tit">사업분야</li>
+          <li><a href="equipment.html">보유장비현황</a></li>
+          <li><a href="quality.html">품질인증현황</a></li>
+        </ul>
+      </li>
+      <li><a href="prod_info.html">제품소개</a></li>
+      <li><a href="inquiry.html">견적문의</a></li>
+      <li class="add_depth">
+        <a href="#" target="_self">고객센터</a>
+        <ul class="add_depth_area">
+          <li class="ad_tit">고객센터</li>
+          <li><a href="notice.html">공지사항</a></li>
+          <li><a href="news.html">뉴스</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div class="real_all_wrap">
+    <header>
+      <div class="container">
+        <div class="for_mobhdt_box">
+          <div class="hd_top_bg"></div>
+          <div class="hd_top_wrap">
+            <ul class="hd_top clearfix">
+              <li class="only_mob"><img src="./img/btn_hmenu_close@2x.png" alt="" width="28px" height="28px" class="close_menu_right">MY MENU</li>
+              <li><a href="main.html">홈</a></li>
+              <li><a href="login.html">로그인</a></li>
+              <li><a href="sitemap.html">사이트맵</a></li>
+              <li><a href="#">관리자</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="hd_btm_wrap clearfix">
+          <div class="logo_wrap">
+            <a href="main.html"><img src="./img/logo.png" alt="오케이 주식회사"></a>
+          </div>
+          <nav class="pc_nav">
+            <ul>
+              <li>
+                <a href="company_info.html">회사소개</a>
+                <ul class="depth2">
+                  <li><a href="company_info.html">인사말</a></li>
+                  <li><a href="history.html">연혁</a></li>
+                  <li><a href="way_to_come.html">오시는 길 및 회사전경</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="equipment.html">사업분야</a>
+                <ul class="depth2">
+                  <li><a href="equipment.html">보유장비현황</a></li>
+                  <li><a href="quality.html">품질인증현황</a></li>
+                </ul>
+              </li>
+              <li><a href="prod_info.html">제품소개</a></li>
+              <li><a href="inquiry.html">견적문의</a></li>
+              <li>
+                <a href="notice.html">고객센터</a>
+                <ul class="depth2">
+                  <li><a href="notice.html">공지사항</a></li>
+                  <li><a href="news.html">뉴스</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="only_mob_btn left_btn"></button>
+          <button type="button" class="only_mob_btn right_btn"></button>
+        </div>
+      </div>
+    </header>
+    <div class="sub_img_bann">
+      <div class="container img_wrap">
+        <img src="./img/sub-txt.png" alt="">
+      </div>
+    </div>
+    <div class="sub_nav">
+      <div class="container">
+        <a href="/"><span class="lnb_home"></span></a>
+        <a href=""><span class="lnb_now">로그인</span></a>
+      </div>
+    </div>
+    <div class="container all_wrap">
+      <div class="container_box clearfix">
+        <div class="left_cate">
+          <h3>로그인</h3>
+        </div>
+        <div class="page_wrap">
+          <div class="pw_header">
+            <h3>로그인</h3>
+            <p>여러분께 최상의 만족을 드리겠습니다</p>
+          </div>
+          <div class="login_wrap find_id">
+            <h2>아이디 찾기 / 비밀번호 재설정</h2>
+            <div class="find_box">
+              <div class="find_tb_top"><span>간편인증</span></div>
+              <ul class="find_acc_tb">
+                <li>
+                  <h3>아이디 확인</h3>
+                  <div class="choice_way">
+                    <label for="id_phone"><input type="radio" name="find_id" value="id_phone" id="id_phone" checked>휴대폰번호</label>
+                    <label for="id_email"><input type="radio" name="find_id" value="id_email" id="id_email">이메일</label>
+                  </div>
+                  <table>
+                    <tr>
+                      <th>이름</th>
+                      <td><input type="text"></td>
+                    </tr>
+                    <tr id="id_phone_area">
+                      <th>휴대폰번호</th>
+                      <td><input type="text" placeholder="(-)빼고 숫자만 입력해주세요"></td>
+                    </tr>
+                    <tr id="id_email_area">
+                      <th>이메일</th>
+                      <td><input type="text" placeholder="이메일을 정확히 입력해주세요"></td>
+                    </tr>
+                    <tr>
+                      <th></th>
+                      <td><button class="certifi_btn">인증번호 받기</button></td>
+                    </tr>
+                    <tr>
+                      <th>인증번호</th>
+                      <td><input type="text" placeholder="인증번호를 정확히 입력해주세요"></td>
+                    </tr>
+                    <tr>
+                      <th></th>
+                      <td><button class="submit_btn">확인</button></td>
+                    </tr>
+                  </table>
+                </li>
+                <li>
+                  <h3>비밀번호 재설정</h3>
+                  <div class="choice_way">
+                    <label for="pw_phone"><input type="radio" name="find_pw" id="pw_phone" value="pw_phone" checked>휴대폰번호</label>
+                    <label for="pw_email"><input type="radio" name="find_pw" id="pw_email" value="pw_email">이메일</label>
+                  </div>
+                  <table>
+                    <tr>
+                      <th>아이디</th>
+                      <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                      <th>이름</th>
+                      <td><input type="text"></td>
+                    </tr>
+                    <tr id="pw_phone_area">
+                      <th>휴대폰번호</th>
+                      <td><input type="text" placeholder="(-)빼고 숫자만 입력해주세요"></td>
+                    </tr>
+                    <tr id="pw_email_area">
+                      <th>이메일</th>
+                      <td><input type="text" placeholder="이메일을 정확히 입력해주세요"></td>
+                    </tr>
+                    <tr>
+                      <th></th>
+                      <td><button class="certifi_btn">인증번호 받기</button></td>
+                    </tr>
+                    <tr>
+                      <th>인증번호</th>
+                      <td><input type="text" placeholder="인증번호를 정확히 입력해주세요"></td>
+                    </tr>
+                    <tr>
+                      <th></th>
+                      <td><button class="submit_btn">확인</button></td>
+                    </tr>
+                  </table>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> <!--container_box-->
+    </div> <!--container-->
+  </div>
+
+
+  <script>
+
+
+    $(document).ready(function(){
+
+      //Check to see if the window is top if not then display button
+      $(window).scroll(function(){
+          if ($(this).scrollTop() > 100) {
+              $('.scrollToTop').fadeIn();
+          } else {
+              $('.scrollToTop').fadeOut();
+          }
+      });
+
+      //Click event to scroll to top
+      $('.scrollToTop').click(function(){
+          $('html, body').animate({scrollTop : 0},800);
+          return false;
+      });
+
+    });
+
+    $('#id_email_area').hide();	// 초깃값 설정
+    $('#pw_email_area').hide();   // 초깃값 설정
+
+
+    $("input[name='find_id']").change(function(){
+      if($("input[name='find_id']:checked").val() == 'id_phone'){
+        $('#id_email_area').hide();
+        $('#id_phone_area').show();
+      }	
+      else if($("input[name='find_id']:checked").val() == 'id_email'){
+        $('#id_phone_area').hide();
+        $('#id_email_area').show();
+      }
+    });
+
+    $("input[name='find_pw']").change(function(){
+      if($("input[name='find_pw']:checked").val() == 'pw_phone'){
+        $('#pw_phone_area').show();
+        $('#pw_email_area').hide();
+      }	
+      else if($("input[name='find_pw']:checked").val() == 'pw_email'){
+        $('#pw_email_area').show();
+        $('#pw_phone_area').hide();
+      }
+    });
+  </script>
+  <script src="./js/hamburger.js"></script>
+  <script src="./js/scroll_top.js"></script>
+</body>
+</html>

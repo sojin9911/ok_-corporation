@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <style>
+    .grid { width:100% }
+    .grid-sizer, .grid-item { width: calc(33% - 1%); }
+    .grid-item {margin-bottom:15px; overflow:hidden;}
+    .grid-item img {display: block; min-width:100%; max-width: 100%; }
+    .pi_wrap{padding: 0 15px; box-sizing: border-box;}
+    @media screen and (max-width:780px) {
+      .grid-sizer, .grid-item { width: 48%; }
+    }
+    </style>
+</head>
+<body>
+  <div class="scrollToTop">
+    <p>Top</p>
+  </div>
+  <nav class="mo_nav">
+    <div class="ad_back">BACK</div>
+    <ul>
+      <li class="add_depth">
+        <a href="#" target="_self">회사소개</a>
+        <ul class="add_depth_area">
+          <li class="ad_tit">회사소개</li>
+          <li><a href="company_info.html">인사말</a></li>
+          <li><a href="history.html">연혁</a></li>
+          <li><a href="way_to_come.html">오시는 길 및 회사전경</a></li>
+        </ul>
+      </li>
+      <li class="add_depth">
+        <a href="#" target="_self">사업분야</a>
+        <ul class="add_depth_area">
+          <li class="ad_tit">사업분야</li>
+          <li><a href="equipment.html">보유장비현황</a></li>
+          <li><a href="quality.html">품질인증현황</a></li>
+        </ul>
+      </li>
+      <li><a href="prod_info.html">제품소개</a></li>
+      <li><a href="inquiry.html">견적문의</a></li>
+      <li class="add_depth">
+        <a href="#" target="_self">고객센터</a>
+        <ul class="add_depth_area">
+          <li class="ad_tit">고객센터</li>
+          <li><a href="notice.html">공지사항</a></li>
+          <li><a href="news.html">뉴스</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div class="real_all_wrap">
+    <header>
+      <div class="container">
+        <div class="for_mobhdt_box">
+          <div class="hd_top_bg"></div>
+          <div class="hd_top_wrap">
+            <ul class="hd_top clearfix">
+              <li class="only_mob"><img src="./img/btn_hmenu_close@2x.png" alt="" width="28px" height="28px" class="close_menu_right">MY MENU</li>
+              <li><a href="main.html">홈</a></li>
+              <li><a href="login.html">로그인</a></li>
+              <li><a href="sitemap.html">사이트맵</a></li>
+              <li><a href="#">관리자</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="hd_btm_wrap clearfix">
+          <div class="logo_wrap">
+            <a href="main.html"><img src="./img/logo.png" alt="오케이 주식회사"></a>
+          </div>
+          <nav class="pc_nav">
+            <ul>
+              <li>
+                <a href="company_info.html">회사소개</a>
+                <ul class="depth2">
+                  <li><a href="company_info.html">인사말</a></li>
+                  <li><a href="history.html">연혁</a></li>
+                  <li><a href="way_to_come.html">오시는 길 및 회사전경</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="equipment.html">사업분야</a>
+                <ul class="depth2">
+                  <li><a href="equipment.html">보유장비현황</a></li>
+                  <li><a href="quality.html">품질인증현황</a></li>
+                </ul>
+              </li>
+              <li><a href="prod_info.html">제품소개</a></li>
+              <li><a href="inquiry.html">견적문의</a></li>
+              <li>
+                <a href="notice.html">고객센터</a>
+                <ul class="depth2">
+                  <li><a href="notice.html">공지사항</a></li>
+                  <li><a href="news.html">뉴스</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="only_mob_btn left_btn"></button>
+          <button type="button" class="only_mob_btn right_btn"></button>
+        </div>
+      </div>
+    </header>
+    <div class="sub_img_bann">
+      <div class="container img_wrap">
+        <img src="./img/sub-txt.png" alt="">
+      </div>
+    </div>
+    <div class="sub_nav">
+      <div class="container">
+        <a href="main.html"><span class="lnb_home"></span></a>
+        <a href="prod_info.html"><span class="lnb_now">제품소개</span></a>
+      </div>
+    </div>
+    <div class="container all_wrap clearfix">
+      <div class="container_box">
+        <div class="left_cate">
+          <h3>제품소개</h3>
+        </div>
+        <div class="page_wrap">
+          <div class="pw_header">
+            <h3>제품소개</h3>
+            <p>여러분께 최상의 만족을 드리겠습니다</p>
+          </div>
+          <div class="pi_wrap">
+            <div class="search_box">
+              <article class="cont-select">
+                <button class="btn-select">제목</button>
+                <ul class="list-member">
+                    <li><button type="button">제목</button></li>
+                    <li><button type="button">내용</button></li>
+                    <li><button type="button">작성자</button></li>
+                    <li><button type="button">제목+내용</button></li>
+                </ul>
+            </article>
+              <div class="search_input_box clearfix">
+                <input type="text">
+                <button type="button" class="btn_search"></button>
+              </div>
+            </div>
+            <div class="grid_area">
+              <div class="grid">
+                <div class="grid-sizer"></div>
+                <div class="grid-item">
+                  <div class="grid_wrap">
+                    <a href="#">
+                      <img src="./img/main_prod1.jpg" />
+                      <div class="prod_info">
+                        <p class="main_pi_name">16 가정용 체성분 분석기</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <div class="grid_wrap">
+                    <a href="#">
+                      <img src="./img/main_prod2.jpg" />
+                      <div class="prod_info">
+                        <p class="main_pi_name">DOOR LOCK</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <div class="grid_wrap">
+                    <a href="#">
+                      <img src="./img/main_prod3.jpg" />
+                      <div class="prod_info">
+                        <p class="main_pi_name">14 -</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <div class="grid_wrap">
+                    <a href="#">
+                      <img src="./img/main_prod4.jpg" />
+                      <div class="prod_info">
+                        <p class="main_pi_name">13 -</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <div class="grid_wrap">
+                    <a href="#">
+                      <img src="./img/prod_add1.jpg" />
+                      <div class="prod_info">
+                        <p class="main_pi_name">12 -</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <div class="grid_wrap">
+                    <a href="#">
+                      <img src="./img/prod_add2.jpg" />
+                      <div class="prod_info">
+                        <p class="main_pi_name">11 -</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <div class="grid_wrap">
+                    <a href="#">
+                      <img src="./img/prod1.jpg" />
+                      <div class="prod_info">
+                        <p class="main_pi_name">10 체성분 분석기(370)</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <div class="grid_wrap">
+                    <a href="#">
+                      <img src="./img/prod2.jpg" />
+                      <div class="prod_info">
+                        <p class="main_pi_name">9 체성분 분석기(720)</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <div class="grid_wrap">
+                    <a href="#">
+                      <img src="./img/prod3.jpg" />
+                      <div class="prod_info">
+                        <p class="main_pi_name">8 전자제품-금도금</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <div class="grid_wrap">
+                    <a href="#">
+                      <img src="./img/prod4.jpg" />
+                      <div class="prod_info">
+                        <p class="main_pi_name">7 전자제품</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <div class="grid_wrap">
+                    <a href="#">
+                      <img src="./img/prod5.jpg" />
+                      <div class="prod_info">
+                        <p class="main_pi_name">6 자동차오디오부품</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <div class="grid_wrap">
+                    <a href="#">
+                      <img src="./img/prod6.jpg" />
+                      <div class="prod_info">
+                        <p class="main_pi_name">5 자동차오디오 VOLUME-3</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <div class="grid_wrap">
+                    <a href="#">
+                      <img src="./img/prod7.jpg" />
+                      <div class="prod_info">
+                        <p class="main_pi_name">4 자동차오디오 VOLUME-2</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <div class="grid_wrap">
+                    <a href="#">
+                      <img src="./img/prod8.jpg" />
+                      <div class="prod_info">
+                        <p class="main_pi_name">3 자동차오디오(chrysler)</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <div class="grid_wrap">
+                    <a href="#">
+                      <img src="./img/prod9.jpg" />
+                      <div class="prod_info">
+                        <p class="main_pi_name">2 녹음기-볼펜형</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pi_more_view clearfix">
+              <button type="button" class="more_view">더보기</button>
+              <button type="button" class="page_go_top">TOP</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var msnry = new Masonry( '.grid', {
+      itemSelector: '.grid-item',
+      // columnWidth: 200
+      columnWidth: '.grid-sizer',
+      percentPosition: true,
+      gutter : 10,
+      horizontalOrder:true,
+      fitwidth: true,
+    });
+    imagesLoaded( '.grid' ).on( 'progress', function() {
+      msnry.layout();
+    });
+  </script> 
+  <script>
+    const btn = document.querySelector('.btn-select');
+    const list = document.querySelector('.list-member');
+    btn.addEventListener('click', () => {
+        btn.classList.toggle('on');
+    });
+    list.addEventListener('click', (event) => {
+      if (event.target.nodeName === "BUTTON") {
+          btn.innerText = event.target.innerText;
+          btn.classList.remove('on');
+      }
+    });
+        
+  </script>
+  <script src="./js/hamburger.js"></script>
+  <script src="./js/scroll_top.js"></script>
+</body>
+</html>
