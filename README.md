@@ -1,1 +1,1 @@
-# ok_-corporation
+# ok_corporation
